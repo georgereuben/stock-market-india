@@ -248,6 +248,25 @@ In the terminal confirm you are at the  /home/user/your_app directory and execut
 
 Now the webserver should be running on port 3000 and you should be able to access the APIs.
 
+## USING DOCKER (OPTIONAL)
+
+If you prefer to use Docker, follow these steps:
+
+### 1. Build the Docker Image
+Navigate to the directory containing your `Dockerfile` and run:
+
+> docker build -t your_app .
+
+### 2. Run the Docker Container
+Run the following command to start your app in a container:
+
+> docker run -p 3000:3000 your_app
+
+### 3. Access the Application
+Visit the application at:
+
+>http://localhost:3000
+
 ## IMPORTANT
 
 > API Calls will fail when made from browser due to 'OPTIONS' request sent by browsers before making an API call and Have few 'insecure' headers set which fails when changed from browser.
